@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TimeManagementDataSet2" targetNamespace="http://tempuri.org/TimeManagementDataSet2.xsd" xmlns:mstns="http://tempuri.org/TimeManagementDataSet2.xsd" xmlns="http://tempuri.org/TimeManagementDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TimeManagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TimeManagementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication1.Properties.Settings.GlobalReference.Default.TimeManagementConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_トラッカーTableAdapter" GeneratorDataComponentClassName="V_トラッカーTableAdapter" Name="V_トラッカー" UserDataComponentName="V_トラッカーTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TimeManagementConnectionString (Settings)" DbObjectName="TimeManagement.dbo.V_トラッカー" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 項目名, 値 FROM dbo.V_トラッカー</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="項目名" DataSetColumn="項目名" />
+              <Mapping SourceColumn="値" DataSetColumn="値" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TimeManagementDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TimeManagementDataSet2" msprop:Generator_UserDSName="TimeManagementDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_トラッカー" msprop:Generator_TableClassName="V_トラッカーDataTable" msprop:Generator_TableVarName="tableV_トラッカー" msprop:Generator_TablePropName="V_トラッカー" msprop:Generator_RowDeletingName="V_トラッカーRowDeleting" msprop:Generator_RowChangingName="V_トラッカーRowChanging" msprop:Generator_RowEvHandlerName="V_トラッカーRowChangeEventHandler" msprop:Generator_RowDeletedName="V_トラッカーRowDeleted" msprop:Generator_UserTableName="V_トラッカー" msprop:Generator_RowChangedName="V_トラッカーRowChanged" msprop:Generator_RowEvArgName="V_トラッカーRowChangeEvent" msprop:Generator_RowClassName="V_トラッカーRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="項目名" msprop:Generator_ColumnVarNameInTable="column項目名" msprop:Generator_ColumnPropNameInRow="項目名" msprop:Generator_ColumnPropNameInTable="項目名Column" msprop:Generator_UserColumnName="項目名">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="値" msprop:Generator_ColumnVarNameInTable="column値" msprop:Generator_ColumnPropNameInRow="値" msprop:Generator_ColumnPropNameInTable="値Column" msprop:Generator_UserColumnName="値">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
