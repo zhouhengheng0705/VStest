@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
 
         }
-        //チケット管理
+        //チケット管理(test)
         public チケット管理 g = null;
         private void btnチケット管理_Click(object sender, EventArgs e)
         {
